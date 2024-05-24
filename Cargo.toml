@@ -1,0 +1,12 @@
+[package]
+name = "exotic-primitives-activity"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+sp-core = { git = "https://github.com/paritytech/substrate", default-features = false, branch = "polkadot-v0.9.42", features = [
+    "full_crypto",
+    "std",
+] }
+schnorrkel = { git = "https://github.com/w3f/schnorrkel", branch = "master" }
+rand_core = { version = "0.6.2", default-features = false }
